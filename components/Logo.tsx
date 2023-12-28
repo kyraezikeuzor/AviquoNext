@@ -13,7 +13,7 @@ const Logo = ({ minimal = true }: LogoProps) => {
     >
       <img
         src="https://www.revisiondojo.com/images/bloom-square.svg"
-        className="w-2 md:w-4 lg:w-6"
+        className="w-10 md:w-4 lg:w-6"
       />
       {!minimal && <p className={`text-md md:text-lg lg:text-lg`}>Aviquo</p>}
     </Link>
