@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 
 type LogoProps = {
-  minimal: true | false;
+  minimal?: true | false;
 };
 
-const Logo = ({ minimal }: LogoProps) => {
+const Logo = ({ minimal = true }: LogoProps) => {
   return (
     <Link
       href="/"

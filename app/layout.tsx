@@ -1,15 +1,14 @@
 "use client";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-import "./globals.css";
 
 import { Providers } from "./providers";
 
-export default async function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
+
+import "./globals.css";
+import LayoutInterface from "@/utils/Interfaces";
+
+export default async function RootLayout({ children }: LayoutInterface) {
   return (
     <html lang="en">
       <head>
