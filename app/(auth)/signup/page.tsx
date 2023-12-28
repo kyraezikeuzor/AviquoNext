@@ -24,29 +24,27 @@ export default async function Signup() {
 
   return (
     <AuthForm action="/api/signup" {...formProps}>
-      <div className="flex flex-col gap-3 w-full h-auto pb-[5%]">
-        <Input
-          id="first_name"
-          name="first_name"
-          type="text"
-          label="First Name"
-          labelPlacement="outside"
-        />
-        <Input
-          id="last_name"
-          name="last_name"
-          type="text"
-          label="Last Name"
-          labelPlacement="outside"
-        />
-        <Input
-          id="email"
-          name="email"
-          type="email"
-          label="Email"
-          labelPlacement="outside"
-        />
-      </div>
+      <Input
+        id="first_name"
+        name="first_name"
+        type="text"
+        label="First Name"
+        labelPlacement="outside"
+      />
+      <Input
+        id="last_name"
+        name="last_name"
+        type="text"
+        label="Last Name"
+        labelPlacement="outside"
+      />
+      <Input
+        id="email"
+        name="email"
+        type="email"
+        label="Email"
+        labelPlacement="outside"
+      />
     </AuthForm>
   );
 }

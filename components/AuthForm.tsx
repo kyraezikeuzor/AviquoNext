@@ -69,25 +69,27 @@ export default function AuthForm({
       className={styles.form}
     >
       <Logo />
-      <h1>{heading}</h1>
-      <p>{subheading}</p>
+      <h1 className="mt-2">{heading}</h1>
+      <p className="mt-1 mb-3 font-light">{subheading}</p>
 
-      <Input
-        id="username"
-        name="username"
-        type="text"
-        label="Username"
-        labelPlacement="outside"
-      />
-      <Input
-        id="password"
-        name="password"
-        type="password"
-        label="Password"
-        labelPlacement="outside"
-      />
+      <div className={styles.inputs}>
+        <Input
+          id="username"
+          name="username"
+          type="text"
+          label="Username"
+          labelPlacement="outside"
+        />
+        <Input
+          id="password"
+          name="password"
+          type="password"
+          label="Password"
+          labelPlacement="outside"
+        />
 
-      {children}
+        {children}
+      </div>
 
       <Button type="btn--submit" size="btn--md" style="btn--primary">
         {buttonText}

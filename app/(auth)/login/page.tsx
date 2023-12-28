@@ -22,9 +22,5 @@ export default async function Login() {
     linkText: "Sign Up",
   };
 
-  return (
-    <main className="flex items-center justify-center min-h-screen">
-      <AuthForm action="/api/login" {...formProps}></AuthForm>
-    </main>
-  );
+  return <AuthForm action="/api/login" {...formProps}></AuthForm>;
 }
